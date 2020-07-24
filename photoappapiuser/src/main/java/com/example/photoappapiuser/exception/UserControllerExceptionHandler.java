@@ -1,4 +1,5 @@
 package com.example.photoappapiuser.exception;
+import org.aspectj.lang.annotation.Before;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;
@@ -11,7 +12,7 @@ public class UserControllerExceptionHandler {
     @ExceptionHandler
     public ResponseEntity<ErrorResponse> handleUserNotFoundException(UserNotFoundException exc)
     {
-        ErrorResponse errorResponse=new ErrorResponse("i am in first", HttpStatus.NOT_FOUND.value(),System.currentTimeMillis());
+        ErrorResponse errorResponse=new ErrorResponse(exc.getMessage(), HttpStatus.NOT_FOUND.value(),System.currentTimeMillis());
         return new ResponseEntity<>(errorResponse,HttpStatus.NOT_FOUND);
     }
    /* @ExceptionHandler
