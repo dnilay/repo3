@@ -11,7 +11,13 @@ public class UserControllerExceptionHandler {
     @ExceptionHandler
     public ResponseEntity<ErrorResponse> handleUserNotFoundException(UserNotFoundException exc)
     {
-        ErrorResponse errorResponse=new ErrorResponse(exc.getMessage(), HttpStatus.NOT_FOUND.value(),System.currentTimeMillis());
+        ErrorResponse errorResponse=new ErrorResponse("i am in first", HttpStatus.NOT_FOUND.value(),System.currentTimeMillis());
         return new ResponseEntity<>(errorResponse,HttpStatus.NOT_FOUND);
     }
+   /* @ExceptionHandler
+    public ResponseEntity<ErrorResponse> handleUserNotFoundException1(UserNotFoundException exc)
+    {
+        ErrorResponse errorResponse=new ErrorResponse("i am in 2nd", HttpStatus.NOT_FOUND.value(),System.currentTimeMillis());
+        return new ResponseEntity<>(errorResponse,HttpStatus.NOT_FOUND);
+    }*/
 }
