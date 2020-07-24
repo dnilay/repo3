@@ -1,13 +1,13 @@
 package com.example.photoappapiuser.ui;
 
 import com.example.photoappapiuser.dto.UserDto;
+import com.example.photoappapiuser.exception.UserNotFoundException;
 import com.example.photoappapiuser.model.UserEntity;
 import com.example.photoappapiuser.service.UserService;
 import com.example.photoappapiuser.shared.UserRequestModelEntity;
 import com.example.photoappapiuser.shared.UserResponseModelEntity;
 import org.modelmapper.ModelMapper;
 import org.modelmapper.convention.MatchingStrategies;
-import org.modelmapper.spi.MatchingStrategy;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
