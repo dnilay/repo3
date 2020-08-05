@@ -1,0 +1,4 @@
+com/example/simpleservice/model/Image$ImageBuilder.class
+com/example/simpleservice/dao/ImageDao.class
+com/example/simpleservice/SimpleServiceApplication.class
+com/example/simpleservice/model/Image.class
