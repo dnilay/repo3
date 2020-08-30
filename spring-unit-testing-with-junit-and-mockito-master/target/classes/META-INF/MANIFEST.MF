@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Built-By: nilay
+Build-Jdk: 11.0.8
+Implementation-Title: unit-testing
+Implementation-Version: 0.0.1-SNAPSHOT
+Implementation-Vendor-Id: com.example.unittesting
+Implementation-Vendor: Pivotal Software, Inc.
+Implementation-URL: https://spring.io/projects/spring-boot/unit-testing
+Created-By: Maven Integration for Eclipse
+

@@ -1,0 +1,7 @@
+-------------------------------------------------------------------------------
+Test set: com.example.unittesting.unittesting.controller.HelloWorldControllerTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.07 s <<< FAILURE! - in com.example.unittesting.unittesting.controller.HelloWorldControllerTest
+helloWorld_basic  Time elapsed: 0.001 s  <<< ERROR!
+org.junit.jupiter.api.extension.ParameterResolutionException: No ParameterResolver registered for parameter [org.springframework.test.web.servlet.MockMvc mockMvc] in constructor [public com.example.unittesting.unittesting.controller.HelloWorldControllerTest(org.springframework.test.web.servlet.MockMvc)].
+
